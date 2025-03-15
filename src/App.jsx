@@ -6,7 +6,7 @@ export default function App() {
 
   async function handleSubmit(e){
     e.preventDefault()
-    const response = await axios.post("http://localhost:3000/login",{username})
+    const response = await axios.post("https://apsbackend.onrender.com/login",{username})
     setUsername(response.data)
     console.log(response.data)
   }
